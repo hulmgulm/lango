@@ -2,7 +2,7 @@
 
 A modern frontend interface for the LanguageTool API, built with React, TypeScript, and Material UI.
 
-![Main page screenshot](/screenshot1.png "Main page")
+![Main page screenshot](/screenshots/screenshot1.png)
 
 ## Features
 
