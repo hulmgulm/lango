@@ -52,7 +52,7 @@ services:
   lango:
     image: kiriharu/lango:latest
     environment:
-      VITE_LANGUAGETOOL_API_URL: http://server_ip.net:8001
+      VITE_LANGUAGETOOL_API_URL: http://server_ip.net:8081/v2
     ports:
       - "3000:3000"
 ```
