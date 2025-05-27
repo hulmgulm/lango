@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      VITE_LANGUAGETOOL_API_URL: https://api.languagetoolplus.com/v2
+    ports:
+      - "3000:3000"
