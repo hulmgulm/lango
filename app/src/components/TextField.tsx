@@ -25,7 +25,7 @@ interface TextInputProps {
 }
 
 // Create a styled div for the highlighting overlay
-const HighlightOverlay = styled('div')(({ theme }) => ({
+const HighlightOverlay = styled('div')(() => ({
   position: 'absolute',
   top: 0,
   left: 0,
@@ -39,14 +39,14 @@ const HighlightOverlay = styled('div')(({ theme }) => ({
   backgroundColor: 'transparent',
   '& mark': {
     color: 'transparent',
-    backgroundColor: 'rgba(244, 67, 54, 0.1)', // Very light red
+    backgroundColor: 'rgba(244, 67, 54, 0.1)',
     borderBottom: `2px solid rgba(244, 67, 54, 0.3)`,
     borderRadius: '2px',
     margin: '-2px',
     padding: '2px',
   },
   '& mark.selected': {
-    backgroundColor: 'rgba(255, 241, 118, 0.2)', // Very light yellow
+    backgroundColor: 'rgba(255, 241, 118, 0.2)',
     borderBottom: '2px solid rgba(255, 214, 79, 0.3)',
   }
 }));
@@ -75,7 +75,6 @@ export const TextInput = ({
   placeholder = 'Enter your text here...',
   label = 'Text Input',
   multiline = true,
-  rows = 8,
   error = false,
   helperText = '',
   errors = [],

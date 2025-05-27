@@ -1,4 +1,4 @@
-import { type ReactNode, type ReactElement } from 'react';
+import { type ReactElement } from 'react';
 import { Box, Tooltip } from '@mui/material';
 
 interface TextError {
