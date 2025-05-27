@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://api.languagetoolplus.com/v2';
+const API_URL = import.meta.env.VITE_LANGUAGETOOL_API_URL || 'https://api.languagetoolplus.com/v2';
 
 interface Match {
   message: string;
