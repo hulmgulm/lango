@@ -12,6 +12,7 @@ A modern frontend interface for the LanguageTool API, built with React, TypeScri
 - Higlight potential issues in text
 - Modern and responsive UI
 
+Demo available [here](https://lango.kiriha.ru)!
 
 ## Getting Started
 
@@ -55,6 +56,7 @@ services:
       VITE_LANGUAGETOOL_API_URL: http://server_ip.net:8081/v2
     ports:
       - "3000:3000"
+    restart: unless-stopped
 ```
 
 After that all API requests will be forwarded to http://server_ip.net:8001 that points to selfhosted backend.  
@@ -73,6 +75,7 @@ services:
       VITE_LANGUAGETOOL_API_URL: https://api.languagetoolplus.com/v2
     ports:
       - "3000:3000"
+    restart: unless-stopped
 ```
 
 ## Tech Stack
